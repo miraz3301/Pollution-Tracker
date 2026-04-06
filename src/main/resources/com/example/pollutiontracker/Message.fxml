@@ -43,7 +43,7 @@
             <HBox alignment="CENTER_LEFT" spacing="10">
                 <Label text="Personal Health Advisory Center" styleClass="section-title" />
                 <Region HBox.hgrow="ALWAYS" />
-                <Label fx:id="aqiBadgeLabel" text="Current AQI: 200 — Unhealthy" styleClass="health-badge-red" />
+<!--                <Label fx:id="aqiBadgeLabel" text="Current AQI: 200 — Unhealthy" styleClass="health-badge-red" />-->
             </HBox>
 
 

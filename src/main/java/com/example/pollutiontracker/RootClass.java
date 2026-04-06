@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public abstract class BaseController {
+public abstract class RootClass {
 
 
     protected abstract Node getRootNode();

@@ -8,7 +8,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 
-public class LoginUserController extends BaseController {
+public class LoginUserController extends RootClass {
 
     @FXML private TextField usernameField;
     @FXML private PasswordField passwordField;

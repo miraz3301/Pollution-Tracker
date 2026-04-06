@@ -5,7 +5,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 
 
-public class DashboardController extends BaseController {
+public class DashboardController extends RootClass {
 
     @FXML private Label aqiValueLabel;
     @FXML private Label aqiStatusLabel;

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class ProfileController extends BaseController {
+public class ProfileController extends RootClass {
     public static String currentCity;
 
     @FXML private Label dateLabel;

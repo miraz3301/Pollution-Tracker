@@ -21,7 +21,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 
-public class HomePageController extends BaseController {
+public class HomePageController extends RootClass {
 
     public  String cCity;
     @FXML private BarChart<String, Number> weeklyChart;

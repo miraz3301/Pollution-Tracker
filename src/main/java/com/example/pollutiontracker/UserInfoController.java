@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserInfoController extends BaseController {
+public class UserInfoController extends RootClass {
 
     @FXML private TextField fullNameField;
     @FXML private TextField ageField;

@@ -15,7 +15,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TreeEstimationController extends BaseController {
+public class TreeEstimationController extends RootClass {
 
     @FXML private Label dateLabel;
     @FXML private Label treesPerPersonLabel;

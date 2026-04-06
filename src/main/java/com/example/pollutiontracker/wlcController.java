@@ -3,7 +3,7 @@ package com.example.pollutiontracker;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
 
-public class wlcController extends BaseController {
+public class wlcController extends RootClass {
     @Override
     protected Node getRootNode() {
         return null;

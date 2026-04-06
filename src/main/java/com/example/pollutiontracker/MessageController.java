@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class MessageController extends BaseController {
+public class MessageController extends RootClass {
 
     @FXML private Label dateLabel;
 
