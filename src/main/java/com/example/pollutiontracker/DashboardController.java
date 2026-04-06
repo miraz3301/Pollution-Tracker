@@ -39,13 +39,23 @@ public class DashboardController extends BaseController {
 
 
     @FXML
-    public void handleHome() {
-        switchScene("homePage.fxml");
+    public void handleHome()  {
+        try {
+            switchScene("homePage.fxml");
+        } catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 
 
     @FXML
     public void handleLogout() {
-        switchScene("login_user.fxml");
+        try {
+            switchScene("login_user.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
+
     }
 }

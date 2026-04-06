@@ -22,7 +22,28 @@ public class MessageController extends BaseController {
     }
 
 
-    @FXML public void handleHome()             { switchScene("homePage.fxml"); }
-    @FXML public void handleTreeEstimation()   { switchScene("TreeEstimation.fxml"); }
-    @FXML public void handleProfile()          { switchScene("Profile.fxml"); }
+    @FXML public void handleHome()
+    {
+        try {
+            switchScene("homePage.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
+    }
+    @FXML public void handleTreeEstimation()   {
+        try {
+            switchScene("TreeEstimation.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
+    }
+    @FXML public void handleProfile()          {
+        try{switchScene("Profile.fxml");}
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
+
+    }
 }

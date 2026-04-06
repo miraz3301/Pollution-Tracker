@@ -123,7 +123,22 @@ public class TreeEstimationController extends BaseController {
         aqiBadge.getStyleClass().add(style);
     }
 
-    @FXML public void handleHome() { switchScene("homePage.fxml"); }
-    @FXML public void handleMessage() { switchScene("Message.fxml"); }
-    @FXML public void handleProfile() { switchScene("Profile.fxml"); }
+    @FXML public void handleHome() {
+        try {
+            switchScene("homePage.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
+    }
+    @FXML public void handleMessage() {
+        try{switchScene("Message.fxml");}
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }}
+    @FXML public void handleProfile() {
+        try{switchScene("Profile.fxml"); }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }}
 }

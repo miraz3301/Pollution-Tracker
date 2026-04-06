@@ -5,13 +5,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<!-- OUTER container = FULL SCREEN BLACK -->
+
 <StackPane style="-fx-background-color: #0d0d1a;"
            xmlns="http://javafx.com/javafx/17.0.12"
            xmlns:fx="http://javafx.com/fxml/1"
            fx:controller="com.example.pollutiontracker.LoginUserController">
 
-    <!-- INNER container = FIXED SIZE CARD with color -->
+
     <VBox alignment="CENTER"
           spacing="15"
           prefWidth="450"
@@ -21,7 +21,7 @@
           stylesheets="@styles.css"
           styleClass="login-card">
 
-        <!-- App Title -->
+
         <Label text="LOGIN TO THE SYSTEM"
                styleClass="login-title">
             <VBox.margin>
@@ -40,13 +40,13 @@
                        styleClass="input-field"/>
 
 
-        <!-- Button -->
+
         <Button maxWidth="200"
                 text="Login"
                 onAction="#loginAction"
                 styleClass="login-btn"/>
 
-        <!-- Message -->
+
         <Label fx:id="messageLabel"
                style="-fx-text-fill: #ff6b6b;"/>
 

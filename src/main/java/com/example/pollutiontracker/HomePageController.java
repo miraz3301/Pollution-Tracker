@@ -234,16 +234,31 @@ public class HomePageController extends BaseController {
 
     @FXML
     public void handleMessage() {
-        switchScene("Message.fxml");
+        try {
+            switchScene("Message.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 
     @FXML
     public void handleTreeEstimation() {
-        switchScene("TreeEstimation.fxml"); // replace with tree fxml when ready
+        try {
+            switchScene("TreeEstimation.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 
     @FXML
     public void handleProfile() {
-        switchScene("Profile.fxml");
+        try {
+            switchScene("Profile.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 }

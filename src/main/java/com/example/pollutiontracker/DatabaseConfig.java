@@ -4,7 +4,7 @@ public final class DatabaseConfig {
 
     private static final String DEFAULT_JDBC_URL = "jdbc:postgresql://localhost:5432/pollution_tracker?sslmode=disable";
     private static final String DEFAULT_USERNAME = "postgres";
-    private static final String DEFAULT_PASSWORD = "password";
+    private static final String DEFAULT_PASSWORD = "oyon4948";
 
     private DatabaseConfig() {
     }

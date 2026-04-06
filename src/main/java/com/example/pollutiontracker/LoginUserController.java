@@ -33,7 +33,12 @@ public class LoginUserController extends BaseController {
 
         if (result.isSuccess()) {
             UserSession.setCurrentUserId(result.getUserId());
-            switchScene("homePage.fxml");
+            try {
+                switchScene("homePage.fxml");
+            }
+            catch (SceneSwitchExceptionController e) {
+                System.out.println("Navigation failed: " + e.getMessage());
+            }
         } else {
             showError(messageLabel, "Invalid username/email or password.");
         }
@@ -41,6 +46,11 @@ public class LoginUserController extends BaseController {
 
     @FXML
     void goToSignUp(ActionEvent event) {
-        switchScene(event, "sign_up.fxml");
+        try {
+            switchScene(event, "sign_up.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 }

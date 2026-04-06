@@ -14,7 +14,7 @@ public abstract class BaseController {
     protected abstract Node getRootNode();
 
 
-    protected void switchScene(String fxmlFile) {
+    protected void switchScene(String fxmlFile)  throws SceneSwitchExceptionController {
         try {
             FXMLLoader loader = new FXMLLoader(
                     getClass().getResource("/com/example/pollutiontracker/" + fxmlFile)
@@ -28,12 +28,12 @@ public abstract class BaseController {
             stage.setMaximized(true);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new SceneSwitchExceptionController("Error loading FXML: ");
         }
     }
 
 
-    protected void switchScene(ActionEvent event, String fxmlFile) {
+    protected void switchScene(ActionEvent event, String fxmlFile) throws SceneSwitchExceptionController {
         try {
             FXMLLoader loader = new FXMLLoader(
                     getClass().getResource("/com/example/pollutiontracker/" + fxmlFile)
@@ -47,7 +47,7 @@ public abstract class BaseController {
             stage.setMaximized(true);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new SceneSwitchExceptionController("Error loading FXML: ");
         }
     }
 

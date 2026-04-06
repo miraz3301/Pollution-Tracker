@@ -163,21 +163,41 @@ public class ProfileController extends BaseController {
     @FXML
     public void handleLogout() {
         UserSession.clear();
-        switchScene("Welcome.fxml");
+        try {
+            switchScene("Welcome.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 
     @FXML
     public void handleHome() {
-        switchScene("homePage.fxml");
+        try {
+            switchScene("homePage.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 
     @FXML
     public void handleMessage() {
-        switchScene("Message.fxml");
+        try {
+            switchScene("Message.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 
     @FXML
     public void handleTreeEstimation() {
-        switchScene("TreeEstimation.fxml");
+        try {
+            switchScene("TreeEstimation.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 }

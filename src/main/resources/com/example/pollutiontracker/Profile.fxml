@@ -22,7 +22,7 @@
 
         <Region HBox.hgrow="ALWAYS" />
 
-        <Label fx:id="dateLabel" text="Monday, 10 Feb 2026" styleClass="date-label" />
+        <Label fx:id="dateLabel" text="Monday, 6 April 2026" styleClass="date-label" />
 
         <Button text="Home"       onAction="#handleHome"           styleClass="nav-btn" />
         <Button text="Message"         onAction="#handleMessage"        styleClass="nav-btn" />

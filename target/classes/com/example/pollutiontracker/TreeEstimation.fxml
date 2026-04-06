@@ -79,7 +79,7 @@
             </VBox>
 
             <VBox spacing="15" styleClass="tree-card">
-                <Label text="Best Trees to Plant in Dhaka" styleClass="section-title" />
+                <Label text="Best Trees to Plant in this area" styleClass="section-title" />
                 <Label prefWidth="999" prefHeight="2" styleClass="card-divider-green" />
 
                 <HBox spacing="0" styleClass="health-msg-box">

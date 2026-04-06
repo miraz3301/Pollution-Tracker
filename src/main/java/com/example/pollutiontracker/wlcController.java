@@ -10,10 +10,20 @@ public class wlcController extends BaseController {
     }
 
     public void goToLogin(ActionEvent event) {
-        switchScene(event, "login_user.fxml");
+        try {
+            switchScene(event, "login_user.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 
     public void goToSignUp(ActionEvent event) {
-        switchScene(event, "sign_up.fxml");
+        try {
+            switchScene(event, "sign_up.fxml");
+        }
+        catch (SceneSwitchExceptionController e) {
+            System.out.println("Navigation failed: " + e.getMessage());
+        }
     }
 }

@@ -40,8 +40,7 @@
 
         <VBox spacing="25" style="-fx-padding: 25 40;">
 
-            <!-- ============ ROW 1: GAUGE METER ============ -->
-            <!-- ============ GAUGE SECTION ============ -->
+
             <VBox alignment="CENTER" spacing="15" styleClass="gauge-card">
 
                 <Label text=" Air Quality Index Meter" styleClass="section-title" />
